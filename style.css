@@ -1,0 +1,167 @@
+html {
+    font-family:'Noto Sans',Arial, Helvetica, sans-serif,
+                'Nunito', sans-serif,'Ysabeau Infant', sans-serif;
+}
+body{
+    width: 100%;margin: 0px ;padding: 0px;
+    color: white; background-color: #000;
+    scroll-behavior: smooth;box-sizing: border-box;
+}
+#container{
+    width: auto;display:flex;flex-direction: column;overflow: hidden; }
+/*---- BOX-1 ------BOX-1 -----BOX-1 -----BOX-1 -----BOX-1 -----BOX-1 ----*/
+#box-1{height: 88vh;width: 100%;
+    background-image: url("netflix-BG.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.blur-bg-box{
+    height: 100%;width:100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background: rgb(0 0 0 / 60%);
+    position: absolute;z-index: 1;
+}
+header{width: 80%;margin: auto; 
+    display: flex;flex-direction: row;justify-content: space-between;align-items: center;
+    padding: 20px 0px 0px;
+    }
+button:hover{cursor: pointer;}
+.netflix-logo{ width: 150px;}
+.header-right{
+    display: inline-flex;flex-direction: row;align-items: center;justify-content: space-around;
+}
+.languages-btn{
+    display: flex;justify-content: center;align-items: center;gap:2px;
+    padding: 3px 20px;margin-right: 30px;
+    border: 1pt solid gray;border-radius: 5px;
+    background-color: black; 
+}
+select{outline: none;}
+.globe-img{width: 16px;padding-top: 2px; border-radius: 50%;background-color: black; }
+.langs-options{ border: none; background-color: black;color: white; font-size: 15px; }
+.signin-btn button{background-color: #e50914;color: white;
+    padding: 8px 16px;font-size: 14px;
+    border: 0px;border-radius: 5px;
+}
+.box-1-middle-box{ line-height: 3rem;
+    width: 70%;height: 100%;margin: auto;text-align: center;
+    display: flex;justify-content: center;align-items:center;flex-direction: column;
+}
+.bold-font{color: #fff;font-size: 50px;}
+.line-1{color: #fff;
+    font-size: 26px;font-weight: bold;padding: 0;
+    >h1{margin: 0;}
+    >h5{
+        font-weight: lighter;
+        font-size: 25px;   margin: 0px; }
+}
+.line-2{ font-size: 20px;color: #fff; font-weight: lighter;
+}
+.line-3{
+    >label input{width: 350px;height: 55px;font-size: 16px;color: white;
+        background-color: rgba(0, 0, 0, 0.77);
+        padding-left: 10px;margin-right: 5px;
+        border: 1px solid lightgray;border-radius: 5px;}
+}
+.get-started-btn{display: inline-flex;justify-content: center;align-items: center;flex-direction: row;gap: 5px;
+        background-color: #e50914;height: 55px;margin: 0px;padding: 13px 20px 17px;
+        border-radius: 5px;border:0px;
+        font-size: 25px;color:#fff;
+        >img{width: 25px;}
+}
+
+/*---------------- BOX-2 to BOX-5 --------------*/
+.box{width: 80%;margin: 0px auto;height: auto;text-align: center;
+    display: flex;justify-content: space-around;align-items: center;
+    flex-wrap: wrap;overflow: hidden;
+    .features-descp-box{ width: 500px;height:auto;padding: 20px 0px 0px;text-align: left;
+        display: flex;flex-direction: column;align-items: start;justify-content: center;
+        >h1 {max-width: 110%;}
+        >h4 {font-size: 22px;width: 100%;font-weight: 200;margin: 0px;}
+    }
+    .features-img-box{ width: 450px;text-align: center;
+        display: flex;justify-content: center;align-items: center;
+        .img-box {width: auto;padding: 20px 0px;} }
+}
+
+[class="box -3"],[class="box -5"]{ 
+            flex-direction: row-reverse; }
+hr{width: 100%;padding: 3px;border: 0px;background-color: rgba(211, 211, 211, 0.286); }
+
+/*------------------FREQUENTLY QUESTION BOX  ----------------*/
+#freq-questions-box{width: 80%;margin: auto;
+    >h1{text-align: center;}
+}
+.ques-box{font-size: 24px;padding: 6px 20px;}
+.ques-topic{display: flex;justify-content: space-between;align-items: center;
+    background-color: rgb(45,45,45);padding: 6px 20px;margin-bottom: 1.5px;
+}
+.ques-topic:hover {background-color: #424242;cursor: pointer;transition-duration:0.3s;}
+.ques-topic:active {background-color: #353535;transition-duration:0.3s;}
+.ques-ans{display: none;background-color: rgb(45,45,45);padding: 6px 20px;}
+.plus-sign-img{width: 35px;
+                transform: rotate(1deg);}
+#ques-last{text-align: center;font-size: 20px;margin: 50px auto;}
+
+/*---- FOOTER ----FOOTER----FOOTER----FOOTER----FOOTER----*/
+#footer{width: 80%;margin: 50px auto;color: lightgray;font-size: 14px;}
+.lang-box-last{width: max-content;}
+a{color: #d3d3d3;}
+a:hover{color: #f5f5f5;}
+.shortcut-links{width: 100%;}
+.tel-call-no{text-decoration: underline;}
+#query-lists{display: flex;justify-content: flex-start;align-items: center;flex-wrap: wrap;
+    padding: 10px 0px; }
+li{list-style-type: none; width: 300px;padding: 12px 0px;}
+#last-line{padding: 10px 0px;}
+
+
+/* ------------MEDIA QUEIRES FOR 3 TYPES OF RESPONSIVE SIZES-------------------*/
+
+/* SCREEN FOR WIDTH B/W --> (960px - 1280px)    */
+@media  screen and (min-width:960px) and (max-width:1280px){
+    
+    header, .box-1-middle-box,.box, #footer{width: 95%;}
+    #box-1{height: 100vh;}
+    #freq-questions-box{width: 100%;}
+
+    .bold-font{font-size:48px ;}
+    .features-img-box{max-width: 400px;min-width: 350px;}
+    li{min-width: 294px;max-width: 350px;}
+}
+
+/* SCREEN FOR WIDTH B/W --> (600px - 960px)    */
+@media  screen and (max-width:960px){
+    header,#footer{width: 95%;}
+        .netflix-logo{width: 100px;}
+        .header-right{justify-content: center;}
+    .bold-font{font-size:30px ;}
+    .features-descp-box h4{font-size: 18px;font-weight: 0px;}
+    .box-1-middle-box p{ font-size: 16px;}
+    .box-1-middle-box h4{ font-size: 16px;}
+    .box-1-middle-box h5{ font-size: 18px;}
+    .features-img-box{max-width: 350px;min-width: 150px;}
+    li{min-width: 150px;max-width: 200px;}
+    .line-3{
+        >label input{min-width: 300px;max-width: 400px;margin-bottom: 10px;}
+    }
+}
+
+/* SCREEN FOR WIDTH B/W --> (0px - 600px)    */
+@media  screen and (max-width:600px){
+    header{flex-wrap: wrap;flex-basis: content;}
+    #box-1,.blur-bg-box{max-height: 1000px;min-height: 800px;}
+    #langs-btn-1{content-visibility:hidden;}
+    .line-3{
+        >label input{width: 300px;margin-bottom: 10px;}
+        }
+    .box{padding: 15px 0px;}
+    .features-descp-box{width: auto;margin: auto;text-align: center;}
+    .bold-font{width: 100%;text-align: center;}
+    .features-descp-box >h4{text-align: center;}
+
+}
+
