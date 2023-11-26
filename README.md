@@ -19,3 +19,14 @@ The Netflix clone is a web application that replicates the design and functional
 - HTML5
 - CSS3
 - JavaScript
+
+## Screenshots
+![Netflix Website Desktop View](<landscape view.png>)
+
+![Netflix Website Smartphone View](<potrait view.png>)
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+The project was inspired by the Netflix streaming platform.
