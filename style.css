@@ -11,7 +11,7 @@ body{
     width: auto;display:flex;flex-direction: column;overflow: hidden; }
 /*---- BOX-1 ------BOX-1 -----BOX-1 -----BOX-1 -----BOX-1 -----BOX-1 ----*/
 #box-1{height: 88vh;width: 100%;
-    background-image: url("netflix-BG.jpg");
+    background-image: url("media/netflix-BG.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
