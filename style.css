@@ -74,21 +74,21 @@ select{outline: none;}
 }
 
 /*---------------- BOX-2 to BOX-5 --------------*/
-.box{width: 80%;margin: 0px auto;height: auto;text-align: center;
+.box{width: 80%;margin: 0px auto;padding: 30px 0px;height: auto;text-align: center;
     display: flex;justify-content: space-around;align-items: center;
-    flex-wrap: wrap;overflow: hidden;
-    .features-descp-box{ width: 500px;height:auto;padding: 20px 0px 0px;text-align: left;
+    flex-wrap: nowrap;overflow: hidden;
+    .features-descp-box{ width: 500px;height:auto;padding: 0px 2px;text-align: left;
         display: flex;flex-direction: column;align-items: start;justify-content: center;
-        >h1 {max-width: 110%;}
+        >h1 {max-width: 100%;}
         >h4 {font-size: 22px;width: 100%;font-weight: 200;margin: 0px;}
     }
-    .features-img-box{ width: 450px;text-align: center;
-        display: flex;justify-content: center;align-items: center;
-        .img-box {width: auto;padding: 20px 0px;} }
 }
-
-[class="box -3"],[class="box -5"]{ 
-            flex-direction: row-reverse; }
+.features-img-box{
+    max-width: max-content;
+}
+[class="box -3"],
+[class="box -5"]{ 
+    flex-direction: row-reverse;}
 hr{width: 100%;padding: 3px;border: 0px;background-color: rgba(211, 211, 211, 0.286); }
 
 /*------------------FREQUENTLY QUESTION BOX  ----------------*/
@@ -129,39 +129,62 @@ li{list-style-type: none; width: 300px;padding: 12px 0px;}
     #freq-questions-box{width: 100%;}
 
     .bold-font{font-size:48px ;}
-    .features-img-box{max-width: 400px;min-width: 350px;}
+    .box{justify-content: space-around;column-gap: 5px;}
+    .features-img-box{width: 50%;}
+    .img-box{width: 100%;}
     li{min-width: 294px;max-width: 350px;}
 }
 
 /* SCREEN FOR WIDTH B/W --> (600px - 960px)    */
-@media  screen and (max-width:960px){
+@media screen and (min-width:600px) and (max-width:960px){
     header,#footer{width: 95%;}
         .netflix-logo{width: 100px;}
         .header-right{justify-content: center;}
     .bold-font{font-size:30px ;}
+    .features-descp-box{width: 37%;}
     .features-descp-box h4{font-size: 18px;font-weight: 0px;}
     .box-1-middle-box p{ font-size: 16px;}
     .box-1-middle-box h4{ font-size: 16px;}
     .box-1-middle-box h5{ font-size: 18px;}
-    .features-img-box{max-width: 350px;min-width: 150px;}
+    .features-img-box{width: 60%;}
+    .box{justify-content: space-around;column-gap: 5px;width: 97%;}
+    .img-box{width: 100%;min-width: 200px;height: auto;}
+    [class="box -3"] img{aspect-ratio: 3/4;max-width: 60%;}
     li{min-width: 150px;max-width: 200px;}
     .line-3{
         >label input{min-width: 300px;max-width: 400px;margin-bottom: 10px;}
     }
+    #freq-questions-box{
+        width: 95%;
+    }
+    #query-lists{
+        column-gap: 30vw;
+    }
 }
 
 /* SCREEN FOR WIDTH B/W --> (0px - 600px)    */
-@media  screen and (max-width:600px){
+@media screen and (max-width:600px){
     header{flex-wrap: wrap;flex-basis: content;}
     #box-1,.blur-bg-box{max-height: 1000px;min-height: 800px;}
     #langs-btn-1{content-visibility:hidden;}
     .line-3{
         >label input{width: 300px;margin-bottom: 10px;}
         }
-    .box{padding: 15px 0px;}
-    .features-descp-box{width: auto;margin: auto;text-align: center;}
+    .box{width: 100vw;padding: 15px 0px;flex-direction: column;row-gap: 10px;}
+    
+    .features-img-box{width: 98%;}
+    .img-box{width: 80%;height: auto;}
+    .features-descp-box{width: 100%;margin: auto;text-align: center;}
     .bold-font{width: 100%;text-align: center;}
     .features-descp-box >h4{text-align: center;}
-
+    #freq-questions-box{
+        width: 100%;
+    }
+    #query-lists{
+        column-gap: 5vw;
+    }
+    .query-list{
+        width: 45%;
+    }
 }
 
