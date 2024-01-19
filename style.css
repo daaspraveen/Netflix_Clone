@@ -77,7 +77,7 @@ select{outline: none;}
 .box{width: 80%;margin: 0px auto;padding: 30px 0px;height: auto;text-align: center;
     display: flex;justify-content: space-around;align-items: center;
     flex-wrap: nowrap;overflow: hidden;
-    .features-descp-box{ width: 500px;height:auto;padding: 0px 2px;text-align: left;
+    .features-descp-box{ max-width: 550px;height:auto;padding: 0px 2px;text-align: left;
         display: flex;flex-direction: column;align-items: start;justify-content: center;
         >h1 {max-width: 100%;}
         >h4 {font-size: 22px;width: 100%;font-weight: 200;margin: 0px;}
@@ -141,17 +141,18 @@ li{list-style-type: none; width: 300px;padding: 12px 0px;}
         .netflix-logo{width: 100px;}
         .header-right{justify-content: center;}
     .bold-font{font-size:30px ;}
-    .features-descp-box{width: 37%;}
+    .features-descp-box{width: 45%;}
     .features-descp-box h4{font-size: 18px;font-weight: 0px;}
     .box-1-middle-box p{ font-size: 16px;}
     .box-1-middle-box h4{ font-size: 16px;}
     .box-1-middle-box h5{ font-size: 18px;}
-    .features-img-box{width: 60%;}
+    .features-img-box{width: 50%;}
     .box{justify-content: space-around;column-gap: 5px;width: 97%;}
     .img-box{width: 100%;min-width: 200px;height: auto;}
     [class="box -3"] img{aspect-ratio: 3/4;max-width: 60%;}
     li{min-width: 150px;max-width: 200px;}
     .line-3{
+        width: 100%;
         >label input{min-width: 300px;max-width: 400px;margin-bottom: 10px;}
     }
     #freq-questions-box{
@@ -164,11 +165,33 @@ li{list-style-type: none; width: 300px;padding: 12px 0px;}
 
 /* SCREEN FOR WIDTH B/W --> (0px - 600px)    */
 @media screen and (max-width:600px){
-    header{flex-wrap: wrap;flex-basis: content;}
+    header{
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: normal;
+    }
+    .header-right{
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .box-1-middle-box{
+        width: 98%;
+        margin-top: 15vh;
+        justify-content:flex-start;
+        line-height: normal;
+    }
+    .line-1 >h5{
+        margin: 15px auto;
+    }
     #box-1,.blur-bg-box{max-height: 1000px;min-height: 800px;}
     #langs-btn-1{content-visibility:hidden;}
     .line-3{
-        >label input{width: 300px;margin-bottom: 10px;}
+        width: 100%;
+        >label input{width: 80%;margin-bottom: 10px;}
         }
     .box{width: 100vw;padding: 15px 0px;flex-direction: column;row-gap: 10px;}
     
